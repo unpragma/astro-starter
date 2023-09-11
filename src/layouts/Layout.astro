@@ -8,6 +8,9 @@ import "@fontsource-variable/playfair-display"; // font-serif
 
 // Website's title as this component's prop.
 const { title } = Astro.props;
+
+// Metadata
+const description: string = "...";
 ---
 
 <html lang="en">
@@ -15,6 +18,9 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
+
+		<!-- Description -->
+		<meta name="description" content={description} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} | Website</title>
 	</head>
