@@ -9,7 +9,11 @@ import "@fontsource-variable/playfair-display"; // font-serif
 // Website's title as this component's prop.
 const { title } = Astro.props;
 
-// Metadata
+// UI Components.
+import Header from "@/ui/Header.astro";
+import Footer from "@/ui/Footer.astro";
+
+// Metadata.
 const description: string = "...";
 ---
 
@@ -37,6 +41,8 @@ const description: string = "...";
 	</head>
 
 	<body>
+		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
