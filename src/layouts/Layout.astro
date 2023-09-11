@@ -13,15 +13,26 @@ const { title } = Astro.props;
 const description: string = "...";
 ---
 
+<!doctype html>
+<!-- Page's language -->
 <html lang="en">
 	<head>
+		<!-- Character set -->
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Responsiveness -->
 		<meta name="viewport" content="width=device-width" />
 
 		<!-- Description -->
 		<meta name="description" content={description} />
+
+		<!-- Astro's watermark -->
 		<meta name="generator" content={Astro.generator} />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Title -->
 		<title>{title} | Website</title>
 	</head>
 
